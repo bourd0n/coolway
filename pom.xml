@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>coolway.all</artifactId>
+    <packaging>pom</packaging>
+    <groupId>com.coolway.app</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <name>coolway_dev</name>
+    <description>coolway_dev</description>
+	
+  <modules>
+        <module>./web/common</module>
+	<module>./web/user</module>
+	<module>./web/company</module>
+	<module>./web/forum</module>
+	<module>./web/feeds</module>
+	<module>./dao/user</module>
+	<module>./dao/company</module>
+	<module>./dao/feeds</module>
+	<module>./dao/forum</module>
+	<module>./biz/common</module>
+	<module>./biz/user</module>
+        <module>./biz/company</module>
+        <module>./biz/feeds</module>
+        <module>./biz/forum</module>
+	<module>./frontend</module>
+  </modules>
+</project>
