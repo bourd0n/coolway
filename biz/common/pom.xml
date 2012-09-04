@@ -11,7 +11,11 @@
 	<groupId>com.coolway.app</groupId>
 	<name>biz.common</name>
 	<description>Auto converted POM for company</description>
-	<dependencies>
 
+	<dependencies>
+		<dependency>
+                        <groupId>commons-dbcp</groupId>
+                        <artifactId>commons-dbcp</artifactId>
+                </dependency>
 	</dependencies>
 </project>

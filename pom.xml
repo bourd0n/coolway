@@ -8,11 +8,7 @@
     <description>coolway_dev</description>
 	
   <modules>
-        <module>./web/common</module>
-	<module>./web/user</module>
-	<module>./web/company</module>
-	<module>./web/forum</module>
-	<module>./web/feeds</module>
+        <module>./web</module>
 	<module>./dao/user</module>
 	<module>./dao/company</module>
 	<module>./dao/feeds</module>
@@ -24,4 +20,15 @@
         <module>./biz/forum</module>
 	<module>./frontend</module>
   </modules>
+	
+  <dependencyManagement>
+      <dependencies>
+		<dependency>
+	   		<groupId>commons-dbcp</groupId>
+	   		<artifactId>commons-dbcp</artifactId>
+	   		<version>1.4</version>
+        	</dependency>
+
+     </dependencies>
+  </dependencyManagement>
 </project>
