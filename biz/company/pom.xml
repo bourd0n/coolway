@@ -12,6 +12,10 @@
 	<name>biz.company</name>
 	<description>Auto converted POM for company</description>
 	<dependencies>
-
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 </project>

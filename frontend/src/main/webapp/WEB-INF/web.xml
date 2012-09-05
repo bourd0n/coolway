@@ -124,7 +124,7 @@
 		<param-value>/WEB-INF/classes/log4j.xml</param-value>
 		</context-param>-->
 	
-	<!-- cookie自动登录filter-->  
+	<!-- cookie自动登录filter  
 	<filter>  
 	    <filter-name>cookie-login-filter</filter-name>  
 	    <filter-class>com.guang.prada.filter.CookieLoginFilter</filter-class>  
@@ -134,7 +134,7 @@
 	    <url-pattern>/*</url-pattern>  
 	</filter-mapping> 
 	
-	<!-- 过滤XSS攻击字符 filter-->  
+	 过滤XSS攻击字符 filter  
 	<filter>  
 	    <filter-name>crossScriptingFilter</filter-name>  
 	    <filter-class>com.guang.prada.filter.CrossScriptingFilter</filter-class>  
@@ -143,8 +143,7 @@
 	    <filter-name>crossScriptingFilter</filter-name>  
 	    <url-pattern>/*</url-pattern>  
 	</filter-mapping>   
-	
-	<!-- 动态地址静态化
+	动态地址静态化
 	<filter>
 		<filter-name>UrlRewriteFilter</filter-name>
 		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>

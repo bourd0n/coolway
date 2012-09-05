@@ -12,6 +12,35 @@
 	<name>web</name>
 	<description>Auto converted POM for company</description>
 	<dependencies>
-
+		
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- j2ee web spec -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+      </dependency>
+		<!-- spring web -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+      </dependency>
 	</dependencies>
 </project>

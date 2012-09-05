@@ -13,6 +13,78 @@
 	<name>frontend</name>
 	<description>Auto converted POM for company</description>
 	<dependencies>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.user</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.company</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.feeds</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.forum</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.web</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- template engine -->
+                <dependency>
+                        <groupId>org.apache.velocity</groupId>
+                        <artifactId>velocity</artifactId>
+                </dependency>
 
+                <dependency>
+                        <groupId>velocity-tools</groupId>
+                        <artifactId>velocity-tools</artifactId>
+                </dependency>
+
+                <dependency>
+                        <groupId>commons-digester</groupId>
+                        <artifactId>commons-digester</artifactId>
+                </dependency>
+
+                <!-- cache (usually for orm) -->
+                <dependency>
+                        <groupId>net.sf.ehcache</groupId>
+                        <artifactId>ehcache</artifactId>
+                </dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.22</version>
+            </plugin>
+         </plugins>
+    </build>
 </project>
