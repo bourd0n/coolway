@@ -1,0 +1,6 @@
+User-agent: Slurp
+Crawl-delay: 20
+Disallow: /admin/
+Disallow: /fix.htm
+Disallow: /notfound.htm
+Disallow: /toobusy.htm

@@ -234,3 +234,6 @@ Caused by: org.apache.velocity.exception.ResourceNotFoundException: Unable to fi
 	at org.apache.velocity.runtime.VelocimacroFactory.initVelocimacro(VelocimacroFactory.java:202)
 	... 65 more
 2012-09-05 14:24:29,214 [main] WARN  g.mapper.MapperScannerConfigurer$Scanner -No MyBatis mapper was found in 'com.coolway.dao' package. Please check your configuration.
+2012-09-05 18:21:45,290 [main] WARN  g.mapper.MapperScannerConfigurer$Scanner -No MyBatis mapper was found in 'com.coolway.dao' package. Please check your configuration.
+2012-09-05 18:22:53,365 [783353674@qtp-1734735672-0] ERROR org.apache.velocity.app.VelocityEngine   -ResourceManager : unable to find resource '//website/index.vm' in any resource loader.
+2012-09-05 18:25:44,379 [783353674@qtp-1734735672-0] ERROR org.apache.velocity.app.VelocityEngine   -ResourceManager : unable to find resource '//website/index.vm' in any resource loader.

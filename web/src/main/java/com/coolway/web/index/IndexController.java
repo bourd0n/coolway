@@ -12,6 +12,6 @@ public class IndexController {
 	@RequestMapping(value="/")
 	public String index(HttpServletRequest request, Model model) {
 		model.addAttribute("hello", "coolway");
-		return "/website/index";
+		return "/index";
 	}
 }
