@@ -21,6 +21,8 @@ public class UserDAOTest extends AbstractJUnit4SpringContextTests{
 	@Autowired
 	private UserMapper userMapper;
 	
+	
+	
 	@Test
 	public void testInsertUser(){
 		User u = new User();
@@ -32,12 +34,13 @@ public class UserDAOTest extends AbstractJUnit4SpringContextTests{
 		u.getId();
 	}
 	
+	
+	
 	@Test
 	public void testGetUser(){
 		UserExample example = new UserExample();
 		example.createCriteria().andNameEqualTo("老徐");
 		List<User> userList = userMapper.selectByExample(example);
-		
 		Assert.notEmpty(userList);
 	}
 	
