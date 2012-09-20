@@ -20,7 +20,7 @@
   <classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar" sourcepath="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-sources.jar"/>
   <classpathentry kind="src" path="/coolway.biz.company"/>
   <classpathentry kind="src" path="/coolway.biz.feeds"/>
-  <classpathentry kind="src" path="/coolway.biz.forum"/>
+  <classpathentry kind="src" path="/coolway.biz.topic"/>
   <classpathentry kind="src" path="/coolway.biz.user"/>
   <classpathentry kind="src" path="/coolway.common"/>
   <classpathentry kind="src" path="/coolway.dao"/>

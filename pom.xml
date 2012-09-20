@@ -14,7 +14,7 @@
 	<module>./biz/user</module>
         <module>./biz/company</module>
         <module>./biz/feeds</module>
-        <module>./biz/forum</module>
+        <module>./biz/topic</module>
 	<module>./frontend</module>
   </modules>
 <properties>

@@ -40,7 +40,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.coolway.app</groupId>
-			<artifactId>coolway.biz.forum</artifactId>
+			<artifactId>coolway.biz.topic</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>

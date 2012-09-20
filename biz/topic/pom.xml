@@ -6,10 +6,10 @@
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>coolway.biz.forum</artifactId>
+	<artifactId>coolway.biz.topic</artifactId>
 	<packaging>jar</packaging>
 	<groupId>com.coolway.app</groupId>
-	<name>biz.forum</name>
+	<name>biz.topic</name>
 	<description>Auto converted POM for company</description>
 	<dependencies>
 		<dependency>
