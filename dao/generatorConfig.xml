@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="./mysql-connector-java-5.1.6-bin.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://42.121.89.124/coolway?characterEncoding=utf-8" userId="admin" password="sfvxvi32$asv" />
+    <javaModelGenerator targetPackage="com.coolway.entity" targetProject="src/main/java" />
+    <sqlMapGenerator targetPackage="com.coolway.dao" targetProject="src/main/resource" />
+    <javaClientGenerator targetPackage="com.coolway.dao" targetProject="src/main/java" type="XMLMAPPER" />
+    
+    <table tableName="user" domainObjectName="User">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="company" domainObjectName="Company">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="invite" domainObjectName="Invite">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="friend" domainObjectName="Friend">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="company_user" domainObjectName="CompanyUser">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="topic" domainObjectName="Topic">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="topic_reply" domainObjectName="TopicReply">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="tag" domainObjectName="Tag">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="topic_tag" domainObjectName="TopicTag">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="notify" domainObjectName="Notify">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	<table tableName="message" domainObjectName="Message">
+			<generatedKey column="id" identity="true" sqlStatement="SYBASE" type="post"/>
+	</table>
+	
+  </context>
+</generatorConfiguration>
