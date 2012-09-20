@@ -18,6 +18,26 @@
 			<artifactId>coolway.common</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.user</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.company</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.feeds</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.coolway.app</groupId>
+			<artifactId>coolway.biz.topic</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		
 		<!-- j2ee web spec -->
       <dependency>
@@ -42,5 +62,9 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
       </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+	    <artifactId>mockito-all</artifactId>
+	  </dependency>
 	</dependencies>
 </project>
