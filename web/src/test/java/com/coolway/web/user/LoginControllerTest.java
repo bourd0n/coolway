@@ -45,20 +45,17 @@ public class LoginControllerTest {
 		Assert.assertTrue(result.isSuccess());
 		verify(loginService).login(name, password);
 	}
-
+	
 	@Test
-	public void loginException() {
-		
-		when(loginService.login(name, password)).thenThrow(
-				new RuntimeException("visit db error"));
+	public void loginException(){
+		when(loginService.login(name, password)).thenThrow(new RuntimeException("visit db error"));
 		ResultModel result = controller.login(name, password);
 		Assert.assertEquals(result.getResultCode(), ResultModel.SERVER_ERROR);
 		verify(loginService).login(name, password);
 	}
-
+	
 	@Test
-	public void loginFailed() {
-		
+	public void loginFailed(){
 		when(loginService.login(name, password)).thenReturn(false);
 		ResultModel result = controller.login(name, password);
 		Assert.assertFalse(result.isSuccess());
