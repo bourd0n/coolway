@@ -48,25 +48,45 @@
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
 		</dependency>
+		
+      <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-taglibs</artifactId>
+    </dependency>
+<!-- spring end -->
+	   <!-- j2ee web spec -->
 		<dependency>
-        	<groupId>javassist</groupId>
-        	<artifactId>javassist</artifactId>
-        	<version>3.12.1.GA</version>
-      </dependency>
-      <!-- spring orm -->
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-orm</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-		<!-- spring end -->
-
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+		</dependency>
+		
+		<!-- image tools 
+		<dependency>
+			  <groupId>im4java</groupId>
+			  <artifactId>im4java-1.3.2</artifactId>
+		</dependency>		
+-->
 		<!-- database access begin -->
 		<!-- newest version in jboss repository -->
 		<dependency>
@@ -218,6 +238,11 @@
           <version>2.1</version>
           <scope>compile</scope>
       </dependency>
-		
+      <!-- 
+      <dependency>
+      <groupId>apache-oro</groupId>
+      <artifactId>jakarta-oro</artifactId>
+    </dependency>
+		 -->
 	</dependencies>
 </project>

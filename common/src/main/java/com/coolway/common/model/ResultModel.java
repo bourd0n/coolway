@@ -16,6 +16,8 @@ public class ResultModel implements Serializable {
 	public static final int PARAMETER_ERROR = -400;
 	public static final int UNAUTHORIZED = -403;
 	public static final int SERVER_ERROR = -500;
+	public static final int USER_NOT_EXIST = -100;
+	public static final int EMAIL_HAS_EXIST = -200;
 
 	private static final long serialVersionUID = 1L;
 
