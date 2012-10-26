@@ -80,7 +80,6 @@ public class CookieHandlingService {
         }
     }
 
-    // by kenny //@Transactional
     public void doCookieLogin(User userinfo, HttpServletRequest request, HttpServletResponse response) {
         String series = generateSeriesData();
         // userinfo.setLoginSeries(series);
@@ -131,91 +130,6 @@ public class CookieHandlingService {
         userMapper.updateByPrimaryKeySelective(userinfo);
         // userInfoMapper.updateUser(userinfo);
     }
-
-    // by kenny //@Transactional
-    // public void doCookieLogin(AdminT admin, HttpServletRequest request, HttpServletResponse response) {
-    // String series = generateSeriesData();
-    // if ("robot".equals(admin.getUsername())) {
-    // series = admin.getLoginSeries();
-    // }
-    // admin.setLoginSeries(series);
-    // setCookie(new String[] { admin.getId().toString(), series }, AdminT_MAX_AGE, adminCookieName, request, response);
-    // //admintMapper.updateByPrimaryKeySelective(admin);
-    // }
-
-    // @Override
-    // public AdminT loginForRobot(String token) {
-    // AdminT admin = null;
-    // admin = ADMIN_CACHE.get(token);
-    // if (admin != null) return admin;
-    // String[] cookieTokens = decodeCookie(token);
-    // AdminTExample example = new AdminTExample();
-    // example.createCriteria().andIdEqualTo(Long.valueOf(cookieTokens[0])).andLoginSeriesEqualTo(cookieTokens[1]);
-    // List<AdminT> list = admintMapper.selectByExample(example);
-    // if (list != null && list.size() > 0) {
-    // admin = list.get(0);
-    // }
-    // /*
-    // * Map<String, String> map = new HashMap<String, String>(); map.put("id", cookieTokens[0]);
-    // * map.put("loginSeries", cookieTokens[1]); admin = admintMapper.verifyLoginSeries(map);
-    // */
-    // if (admin != null) {
-    // ADMIN_CACHE.put(token, admin);
-    // }
-    // return admin;
-    // }
-
-    /**
-     * 通过Filter 自动登录
-     * 
-     * @see com.guang.prada.service.common.website.user.service.CookieHandlingService#autoLogin(javax.servlet.http.HttpServletRequest,
-     * javax.servlet.http.HttpServletResponse)
-     * @since Guang 0.0.1
-     */
-    // public AdminT autoLoginForAdmin(HttpServletRequest request, HttpServletResponse response) {
-    //
-    // String rememberMeCookie = getCookie(adminCookieName, request);
-    //
-    // if (rememberMeCookie == null) {
-    // return null;
-    // }
-    //
-    // logger.debug("Remember-me cookie detected");
-    //
-    // if (rememberMeCookie.length() == 0) {
-    // logger.debug("Cookie was empty");
-    // cancelCookie(adminCookieName, request, response);
-    // return null;
-    // }
-    //
-    // AdminT admin = null;
-    //
-    // String[] cookieTokens = decodeCookie(rememberMeCookie);
-    // /*
-    // * Map<String, String> map = new HashMap<String, String>(); map.put("id", cookieTokens[0]);
-    // * map.put("loginSeries", cookieTokens[1]); admin = AdminTDao.verifyLoginSeries(map); if (admin == null) {
-    // * cancelCookie(AdminTCookieName, request, response); }
-    // */
-    // Long adminId = Long.parseLong(cookieTokens[0]);
-    // AdminTExample example = new AdminTExample();
-    // example.createCriteria().andIdEqualTo(adminId).andLoginSeriesEqualTo(cookieTokens[1]);
-    // List<AdminT> admins = admintMapper.selectByExample(example);
-    // if (admins == null || admins.size() < 1) {
-    // cancelCookie(adminCookieName, request, response);
-    // } else {
-    // admin = admins.get(0);
-    // }
-    // return admin;
-    // }
-
-    // public void logout(AdminT admin, HttpServletRequest request, HttpServletResponse response) {
-    // if (admin == null) return;
-    // cancelCookie(this.adminCookieName, request, response);
-    // if (!"robot".equals(admin.getUsername())) {
-    // admin.setLoginSeries(null);
-    // }
-    // this.admintMapper.updateByPrimaryKeySelective(admin);
-    // }
 
     protected String generateSeriesData() {
         byte[] newSeries = new byte[seriesLength];

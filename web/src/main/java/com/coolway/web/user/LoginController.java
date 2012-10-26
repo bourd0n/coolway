@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.coolway.biz.user.UserLoginService;
 import com.coolway.common.logger.LoggerUtils;
 import com.coolway.common.model.ResultModel;
-import com.guang.prada.common.constants.CommonConstants;
-import com.guang.prada.entity.User;
 
 @Controller
 public class LoginController {

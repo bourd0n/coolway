@@ -13,34 +13,30 @@ import com.coolway.dao.UserMapper;
 import com.coolway.entity.User;
 import com.coolway.entity.UserExample;
 
-
 @ContextConfiguration(locations = { "classpath:spring/beans.xml" })
-public class UserDAOTest extends AbstractJUnit4SpringContextTests{
+public class UserDAOTest extends AbstractJUnit4SpringContextTests {
 
-	
-	@Autowired
-	private UserMapper userMapper;
-	
-	
-	@Test
-	public void testInsertUser(){
-		User u = new User();
-		u.setName("老徐");
-		u.setAddress("杭州");
-		u.setCreateTime(new Date());
-		u.setEmail("zhaopeng.xuzp@gmail.com");
-		userMapper.insert(u);
-		u.getId();
-	}
-	
-	
-	
-	@Test
-	public void testGetUser(){
-		UserExample example = new UserExample();
-		example.createCriteria().andNameEqualTo("老徐");
-		List<User> userList = userMapper.selectByExample(example);
-		Assert.notEmpty(userList);
-	}
-	
+    
+    @Autowired
+    private UserMapper userMapper;
+
+    @Test
+    public void testInsertUser() {
+        User u = new User();
+        u.setName("老徐");
+        u.setAddress("杭州");
+        u.setCreateTime(new Date());
+        u.setEmail("zhaopeng.xuzp@gmail.com");
+        userMapper.insert(u);
+        u.getId();
+    }
+
+    @Test
+    public void testGetUser() {
+        UserExample example = new UserExample();
+        example.createCriteria().andNameEqualTo("老徐");
+        List<User> userList = userMapper.selectByExample(example);
+        Assert.notEmpty(userList);
+    }
+
 }
