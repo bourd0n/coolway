@@ -22,7 +22,6 @@ public class UserDAOTest extends AbstractJUnit4SpringContextTests{
 	private UserMapper userMapper;
 	
 	
-	
 	@Test
 	public void testInsertUser(){
 		User u = new User();
